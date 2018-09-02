@@ -36,6 +36,6 @@ class Api::ContactsController < ApplicationController
     @contact = Contact.find(params[:id])
     @contact.destroy
 
-    render json: {:message "Contact successfully destroyed"}
+    render json: {message: "Contact successfully destroyed"}
   end
 end
