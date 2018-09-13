@@ -18,4 +18,7 @@ class Contact < ApplicationRecord
   def japan_phone_number
     "+81 #{phone_number}"
   end
+
+belongs_to :user 
+
 end

@@ -10,3 +10,5 @@ json.formatted do
  json.friendly_updated_at contact.updated_at
  json.phone_number contact.japan_phone_number
 end
+
+json.current_user contact.current_user
