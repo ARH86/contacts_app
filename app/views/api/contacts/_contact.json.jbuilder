@@ -12,3 +12,7 @@ json.formatted do
 end
 
 json.current_user contact.current_user
+
+json.groups do
+  json.array! contact.groups, partial: "api/groups/group", as: :group
+end 
